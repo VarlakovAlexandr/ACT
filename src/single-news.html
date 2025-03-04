@@ -1,0 +1,132 @@
+@@include('templates/header.html', {"body-class": "bg-white"})
+<main>
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a>
+            <a href="news-archive.html">Новости</a>            
+            <span>Одиночная новость</span>
+        </div>        
+    </nav>
+
+    <div class="content-container">
+        <section>
+            <div class="container">
+                <div class="news-content">
+                    <div class="news-content__text-block">
+                        <p class="text-3">12 января 2025</p>
+                        <h1 class="h2">Важное объявление: изменения в ценовой политике!</h1>
+
+                        <div class="news-content__content">
+                            <p>Мы хотим поделиться с вами важной информацией. В связи с непрерывным ростом цен на металл, мы вынуждены внести изменения в нашу ценовую политику.</p>
+                            <p>С 15 апреля 2024 года ожидается повышение цен на продукцию примерно на 10%.</p>
+                            <p>Мы всегда стремимся к прозрачности и честности в отношениях с Вами, и рассчитываем на Ваше понимание в этой ситуации.</p>
+                            <p>Спасибо за Ваше доверие и выбор нашей компании!</p>                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="news-content__thumbnail">
+                        <img src="assets/img/news/2.png" alt="">
+
+                        <span class="news-content__thumbnail--article-info">с 1 марта повышение цен <br/>
+                            на продукцию!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="container">
+                <h2>еще новости:</h2>
+
+
+                <div class="swiper more-news">
+                    <div class="swiper-wrapper">
+                        <a href="single-news.html" class="news-card swiper-slide">
+                            <div class="news-card__img">
+                                <img src="assets/img/news/3.jpg" alt="">
+                            </div>
+                            <div class="news-card__body">
+                                <span class="news-card__date">12 января 2025</span>
+                                <span class="news-card__excerpt">Важное объявление: изменения в ценовой политике!</span>
+                                <span class="news-card__link "> 
+                                    <span href="catalog.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>  
+                        </a>
+                        <a href="single-news.html" class="news-card swiper-slide">
+                            <div class="news-card__img">
+                                <img src="assets/img/news/3.jpg" alt="">
+                            </div>
+                            <div class="news-card__body">
+                                <span class="news-card__date">12 января 2025</span>
+                                <span class="news-card__excerpt">Важное объявление: изменения в ценовой политике!</span>
+                                <span class="news-card__link "> 
+                                    <span href="catalog.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>  
+                        </a>
+                        <a href="single-news.html" class="news-card swiper-slide">
+                            <div class="news-card__img">
+                                <img src="assets/img/news/3.jpg" alt="">
+                            </div>
+                            <div class="news-card__body">
+                                <span class="news-card__date">12 января 2025</span>
+                                <span class="news-card__excerpt">Важное объявление: изменения в ценовой политике!</span>
+                                <span class="news-card__link "> 
+                                    <span href="catalog.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>  
+                        </a>
+                        <a href="single-news.html" class="news-card swiper-slide">
+                            <div class="news-card__img">
+                                <img src="assets/img/news/3.jpg" alt="">
+                            </div>
+                            <div class="news-card__body">
+                                <span class="news-card__date">12 января 2025</span>
+                                <span class="news-card__excerpt">Важное объявление: изменения в ценовой политике!</span>
+                                <span class="news-card__link "> 
+                                    <span href="catalog.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </div>  
+                        </a>
+                    </div>
+                </div>
+
+                <div class="years-nav">
+                    <div class="years-nav__title">Архив по годам:</div>
+                    <div class="years-nav__years">
+                        <a href="#">2022</a>
+                        <a href="#">2023</a>
+                        <a href="#">2024</a>
+                        <span >2025</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</main>
+@@include('templates/footer.html')

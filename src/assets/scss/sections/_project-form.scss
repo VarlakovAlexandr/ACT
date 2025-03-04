@@ -1,0 +1,215 @@
+.prjp-section{
+    width: 100%;
+    overflow: hidden;
+}
+.prjp-form {
+    padding-top: 20px;
+
+    padding-bottom: 40px;
+}
+
+.project-form-block {
+    
+    border-radius: 8px;
+    
+    padding: 20px 0;
+
+    position: relative;
+
+    @include calculateResponsiveProperty(390px, 767px, 0px, 32px, padding-left);
+    @include calculateResponsiveProperty(390px, 767px, 0px, 32px, padding-right);
+    @include calculateResponsiveProperty(390px, 767px, 20px, 32px, padding-top);
+    @include calculateResponsiveProperty(390px, 767px, 20px, 32px, padding-bottom);
+    //@include calculateResponsiveProperty(390px, 767px, 8px, 16px, border-radius);
+
+    @include calculateResponsiveProperty(768px, 1024px, 32px, 60px, padding);
+
+    @include calculateResponsiveProperty(1024px, 1920px, 60px, 120px, padding-bottom);
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        background-color: #fff;
+        transform: translate(-50%, 0);
+        z-index: -1;
+    }
+
+}
+
+.project-form-block__img-block{
+
+    display: none;
+    @media (min-width: 1024px){
+        display: initial;
+    }
+
+    position: absolute;
+    
+    bottom: -6px;
+    width: 40%;
+    right: 0;
+    transform: translate(12%, 0px);
+    @media (min-width: 1280px){
+        width: 53%;
+    }
+}
+
+
+.project-form-block__form-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    
+
+
+    @media (min-width: 1024px){
+        max-width: 640px;
+    }
+}
+.project-form-block__title-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.prj-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.prj-form__inputs-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    @media (min-width: 640px){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+}
+.prj-form__input-wrap {
+    width: 100%;
+}
+.prj-form__submit-wrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .prj-form__submit.btn{
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
+.prj-form__input-wrap.textarea{
+    grid-column: 1 / -1;
+}
+textarea.prj-form__input{
+    height: 100px;
+}
+.prj-form__input {
+    width: 100%;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 12px 10px;
+    background: var(--grey-1);
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black);
+
+    &::placeholder{
+        opacity: 1;
+        color: var(--grey-2);
+    }
+
+}
+.prj-form__bottom-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @media (min-width: 640px){
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+
+.prj-form__bottom-block.c-page{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.prj-form__privacy-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+}
+
+.prj-form__privacy-link{
+    @include mx-text-3(#666);
+    &:hover{
+        color: var(--red);
+    }
+}
+
+.form-approve {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.form-approve__input-checkbox {
+    display: none;
+}
+
+.form-approve__visible-cb{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba($color: #333, $alpha: .5);
+    cursor: pointer;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.04357 8.45643C3.82258 8.45638 3.61065 8.36855 3.45441 8.21226L0.254407 5.01226C0.174815 4.93539 0.11133 4.84343 0.0676557 4.74176C0.0239815 4.64009 0.000992978 4.53074 3.14642e-05 4.42009C-0.000930049 4.30945 0.0201545 4.19971 0.0620553 4.0973C0.103956 3.99488 0.165834 3.90184 0.244078 3.8236C0.322321 3.74535 0.415365 3.68348 0.517778 3.64158C0.620192 3.59967 0.729925 3.57859 0.840575 3.57955C0.951224 3.58051 1.06057 3.6035 1.16224 3.64718C1.26391 3.69085 1.35587 3.75433 1.43274 3.83393L4.04357 6.44476L10.2544 0.233926C10.4116 0.0821281 10.6221 -0.00186718 10.8406 3.15022e-05C11.0591 0.00193018 11.2681 0.0895712 11.4226 0.244078C11.5771 0.398585 11.6647 0.607595 11.6666 0.826092C11.6685 1.04459 11.5845 1.25509 11.4327 1.41226L4.63274 8.21226C4.4765 8.36855 4.26457 8.45638 4.04357 8.45643Z' fill='white' /%3e%3c/svg%3e");
+        background-size: 12px 8px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.form-approve__input-checkbox:checked + .form-approve__visible-cb{
+    border-color: var(--red);
+    background-color: var(--red);
+    
+}
+
+
+
+
+.form-approve__text {
+    @include mx-text-3(#666);
+}
+
+.prj-form__submit {
+    flex-shrink: 0;
+}

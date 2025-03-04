@@ -1,0 +1,39 @@
+.tag-list.swiper{
+    width: 100%;
+    
+    @include calculateResponsiveProperty(1024px, 1920px, 0px, 30px, margin-bottom);
+
+    .swiper-wrapper{
+        @media  (min-width: 1024px){
+            transform: none !important;
+            gap: 10px 25px !important;
+            flex-wrap: wrap !important;
+        }
+        
+    }
+
+    .swiper-slide{
+        transition: ease 300ms !important;
+        @media  (min-width: 1024px){
+            margin-right: 0 !important;
+        }
+    }
+    
+    
+}
+
+.tag-list__tag{
+    border: 1px solid var(--dark-blue);
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: auto !important;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black);
+
+    &:hover{
+        color: var(--red);
+        border-color: var(--red);
+    }
+}

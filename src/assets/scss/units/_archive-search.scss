@@ -1,0 +1,51 @@
+.archive-search{
+
+    width: 100%;
+
+    @media (min-width: 1024px){
+        max-width: 50%;
+    }
+}
+
+.archive-search__input-wrap{
+    position: relative;
+    width: 100%;
+}
+
+.archive-search__input{
+    font-family: var(--font-family);
+    border: 1px solid #999;
+    border-radius: 12px;
+    padding: 10px 50px 10px 10px;
+
+    color: var(--black);
+    font-weight: 500;
+    font-size: 15px;
+
+    &::placeholder{
+        opacity: 1;            
+        color: #999;
+
+    }
+
+    &:focus{
+        border-color: var(--black);
+    }
+}
+
+.archive-search__submit{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 10px;
+    border-radius: 12px;
+
+    &:hover{
+        background-color: var(--blue);
+        path{
+            stroke: #fff;
+        }
+    }
+}
+

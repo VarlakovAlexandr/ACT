@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Краткое описание страницы"/>
+    <title>Сайт</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/gilroy.min.css">     
+    <link rel="stylesheet" href="assets/css/hystmodal.min.css">     
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">     
+    <link rel="stylesheet" href="assets/css/swiper.min.css">     
+    <link rel="stylesheet" href="assets/css/main.min.css">     
+    
+</head>
+<body>
+    <header class="header header-index">
+        <div class="header-top">
+            <div class="container">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/light-logo.svg" alt="" class="header-logo__img">
+                    <span class="header-logo__line"></span>
+                    <span class="header-logo__text">Производство<br/>стеллажей</span>
+                </a>
+
+                <a href="tel:+74957488930" class="header-phone">
+                    <span class="header-phone__number">+7 (495) 748 89 30</span>
+                    <span class="header-phone__comment">Звонок по России бесплатный</span>
+                </a>
+
+                <div class="header-contacts">
+                    <a href="#" >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mail-icon">
+                            <path d="M1.06667 6.07333C1.20109 5.48432 1.53154 4.95842 2.0039 4.58174C2.47625 4.20507 3.06251 3.99996 3.66667 4H19.6667C20.2708 3.99996 20.8571 4.20507 21.3294 4.58174C21.8018 4.95842 22.1322 5.48432 22.2667 6.07333L11.6667 12.552L1.06667 6.07333ZM1 7.596V17.068L8.73733 12.324L1 7.596ZM10.0147 13.1067L1.25467 18.476C1.4711 18.9324 1.8127 19.3179 2.23971 19.5877C2.66672 19.8575 3.16157 20.0005 3.66667 20H19.6667C20.1717 20.0001 20.6663 19.8568 21.0931 19.5868C21.5199 19.3168 21.8612 18.9311 22.0773 18.4747L13.3173 13.1053L11.6667 14.1147L10.0147 13.1053V13.1067ZM14.596 12.3253L22.3333 17.068V7.596L14.596 12.324V12.3253Z" fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="telegram-icon">
+                            <path d="M9.65416 14.8791L9.34848 19.9097C9.79764 19.9097 9.99609 19.684 10.2468 19.4163L12.4048 17.1113L16.8944 20.7548C17.7206 21.2556 18.317 20.9963 18.5228 19.9122L21.47 4.65647C21.7718 3.32761 21.0089 2.7249 20.2184 3.11908L2.91222 10.4492C1.73091 10.9697 1.7378 11.6936 2.69689 12.0162L7.13806 13.5388L17.4198 6.41357C17.9052 6.09026 18.3507 6.26408 17.9851 6.62053L9.65391 14.8789L9.65416 14.8791Z" fill="white" />
+                          </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="whatsapp-icon">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.718653 18.4133L4.31419 17.4705L4.66109 17.6763C6.11967 18.5415 7.79164 18.9993 9.49633 19H9.50018C14.7363 19 18.9979 14.7398 19 9.50344C19.001 6.96592 18.0138 4.58001 16.2202 2.78496C14.4266 0.989918 12.0414 0.000879454 9.50392 0C4.26378 0 0.00208105 4.25978 8.05564e-07 9.49574C-0.000734203 11.2901 0.501518 13.0377 1.45248 14.5496L1.67836 14.909L0.718653 18.4133ZM14.8673 11.964C15.0665 12.0603 15.201 12.1252 15.2584 12.2211C15.3298 12.3401 15.3298 12.9117 15.0919 13.5787C14.8538 14.2455 13.7129 14.8542 13.1641 14.9361C12.6721 15.0096 12.0495 15.0403 11.3654 14.823C10.9506 14.6914 10.4187 14.5158 9.73728 14.2216C7.05992 13.0659 5.25058 10.4719 4.90862 9.98169C4.88466 9.94735 4.86791 9.92333 4.85856 9.91085L4.85626 9.90777C4.70512 9.70619 3.69242 8.35549 3.69242 6.95758C3.69242 5.64255 4.33862 4.95328 4.63606 4.63601C4.65644 4.61427 4.67518 4.59428 4.69197 4.57595C4.95374 4.29013 5.26316 4.21868 5.45354 4.21868C5.64391 4.21868 5.83451 4.22044 6.0009 4.22879C6.02143 4.22982 6.04279 4.2297 6.06487 4.22957C6.2313 4.22859 6.43878 4.22738 6.64347 4.71886C6.72221 4.90801 6.83743 5.18842 6.95896 5.48417C7.20471 6.08223 7.47622 6.74301 7.52399 6.83864C7.59541 6.98155 7.64299 7.1482 7.5478 7.33882C7.53351 7.3674 7.52029 7.39437 7.50767 7.42014C7.43617 7.56606 7.38357 7.6734 7.26222 7.81503C7.2145 7.87073 7.16518 7.93077 7.11587 7.99081C7.01761 8.11042 6.91937 8.23002 6.83382 8.31522C6.69085 8.45757 6.54202 8.61203 6.70861 8.89784C6.8752 9.18366 7.44837 10.1185 8.29737 10.8755C9.21002 11.6893 10.0032 12.0332 10.4053 12.2076C10.4838 12.2416 10.5474 12.2692 10.5941 12.2925C10.8795 12.4355 11.0461 12.4116 11.2127 12.2211C11.3793 12.0305 11.9267 11.3874 12.117 11.1017C12.3074 10.816 12.4978 10.8635 12.7596 10.9588C13.0214 11.0541 14.4255 11.7447 14.7111 11.8876C14.7668 11.9155 14.819 11.9407 14.8673 11.964Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-buttons">
+                    <button class="header-btn header-btn-white" data-hystmodal="#quiz-modal">Рассчитать стоимость</button>
+                    <button class="header-btn header-btn-white" data-hystmodal="#feedback-modal" >Заказать звонок</button>
+                </div>
+
+
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__left">
+                    <button class="header-show-catalog">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 9.5V7.5H21V9.5H7ZM7 13.5V11.5H21V13.5H7ZM7 17.5V15.5H21V17.5H7ZM4 9.5C3.71667 9.5 3.47917 9.40417 3.2875 9.2125C3.09583 9.02083 3 8.78333 3 8.5C3 8.21667 3.09583 7.97917 3.2875 7.7875C3.47917 7.59583 3.71667 7.5 4 7.5C4.28333 7.5 4.52083 7.59583 4.7125 7.7875C4.90417 7.97917 5 8.21667 5 8.5C5 8.78333 4.90417 9.02083 4.7125 9.2125C4.52083 9.40417 4.28333 9.5 4 9.5ZM4 13.5C3.71667 13.5 3.47917 13.4042 3.2875 13.2125C3.09583 13.0208 3 12.7833 3 12.5C3 12.2167 3.09583 11.9792 3.2875 11.7875C3.47917 11.5958 3.71667 11.5 4 11.5C4.28333 11.5 4.52083 11.5958 4.7125 11.7875C4.90417 11.9792 5 12.2167 5 12.5C5 12.7833 4.90417 13.0208 4.7125 13.2125C4.52083 13.4042 4.28333 13.5 4 13.5ZM4 17.5C3.71667 17.5 3.47917 17.4042 3.2875 17.2125C3.09583 17.0208 3 16.7833 3 16.5C3 16.2167 3.09583 15.9792 3.2875 15.7875C3.47917 15.5958 3.71667 15.5 4 15.5C4.28333 15.5 4.52083 15.5958 4.7125 15.7875C4.90417 15.9792 5 16.2167 5 16.5C5 16.7833 4.90417 17.0208 4.7125 17.2125C4.52083 17.4042 4.28333 17.5 4 17.5Z" fill="#4750D5" />
+                        </svg>
+                        Каталог
+                    </button>
+                    <nav class="header-nav">
+                        <ul class="header-menu"> 
+                            <li class="header-menu__item">
+                                <a href="services.html" class="header-menu__link">Услуги</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="our-projects.html" class="header-menu__link">
+                                    Наши проекты
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.353433 0.604928C0.3866 0.571677 0.426001 0.545296 0.469379 0.527296C0.512757 0.509296 0.55926 0.500031 0.606225 0.500031C0.65319 0.500031 0.699693 0.509296 0.743071 0.527296C0.78645 0.545296 0.825851 0.571677 0.859018 0.604928L4.89084 4.63747L8.92267 0.604928C8.95587 0.57173 8.99528 0.545397 9.03865 0.527431C9.08203 0.509465 9.12852 0.500217 9.17546 0.500217C9.22241 0.500217 9.2689 0.509465 9.31227 0.527431C9.35565 0.545397 9.39506 0.57173 9.42826 0.604928C9.46145 0.638125 9.48779 0.677536 9.50575 0.72091C9.52372 0.764284 9.53297 0.810772 9.53297 0.85772C9.53297 0.904668 9.52372 0.951157 9.50575 0.994531C9.48779 1.03791 9.46145 1.07732 9.42826 1.11051L5.14364 5.39513C5.11047 5.42838 5.07107 5.45477 5.02769 5.47276C4.98431 5.49077 4.93781 5.50003 4.89084 5.50003C4.84388 5.50003 4.79738 5.49077 4.754 5.47276C4.71062 5.45477 4.67122 5.42838 4.63805 5.39513L0.353433 1.11051C0.320182 1.07735 0.293801 1.03794 0.275801 0.994567C0.257801 0.951188 0.248535 0.904685 0.248535 0.85772C0.248535 0.810756 0.257801 0.764252 0.275801 0.720874C0.293801 0.677496 0.320182 0.638095 0.353433 0.604928Z" fill="white" />
+                                    </svg>
+                                </a>
+
+                                <div class="header-sub-menu">
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Архивы</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Библиотеки</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Музеи</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Промышленные предприятия</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Медицинские учреждения</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">МВД</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Университет</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Галереи</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Картины</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Выставки</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">
+                                    О компании
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.353433 0.604928C0.3866 0.571677 0.426001 0.545296 0.469379 0.527296C0.512757 0.509296 0.55926 0.500031 0.606225 0.500031C0.65319 0.500031 0.699693 0.509296 0.743071 0.527296C0.78645 0.545296 0.825851 0.571677 0.859018 0.604928L4.89084 4.63747L8.92267 0.604928C8.95587 0.57173 8.99528 0.545397 9.03865 0.527431C9.08203 0.509465 9.12852 0.500217 9.17546 0.500217C9.22241 0.500217 9.2689 0.509465 9.31227 0.527431C9.35565 0.545397 9.39506 0.57173 9.42826 0.604928C9.46145 0.638125 9.48779 0.677536 9.50575 0.72091C9.52372 0.764284 9.53297 0.810772 9.53297 0.85772C9.53297 0.904668 9.52372 0.951157 9.50575 0.994531C9.48779 1.03791 9.46145 1.07732 9.42826 1.11051L5.14364 5.39513C5.11047 5.42838 5.07107 5.45477 5.02769 5.47276C4.98431 5.49077 4.93781 5.50003 4.89084 5.50003C4.84388 5.50003 4.79738 5.49077 4.754 5.47276C4.71062 5.45477 4.67122 5.42838 4.63805 5.39513L0.353433 1.11051C0.320182 1.07735 0.293801 1.03794 0.275801 0.994567C0.257801 0.951188 0.248535 0.904685 0.248535 0.85772C0.248535 0.810756 0.257801 0.764252 0.275801 0.720874C0.293801 0.677496 0.320182 0.638095 0.353433 0.604928Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="header-sub-menu" >
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="about.html" class="header-sub-menu__link">О компании</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="how-make-order.html" class="header-sub-menu__link">Как Заказать</a>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="news-archive.html" class="header-menu__link">
+                                    Новости и статьи
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.353433 0.604928C0.3866 0.571677 0.426001 0.545296 0.469379 0.527296C0.512757 0.509296 0.55926 0.500031 0.606225 0.500031C0.65319 0.500031 0.699693 0.509296 0.743071 0.527296C0.78645 0.545296 0.825851 0.571677 0.859018 0.604928L4.89084 4.63747L8.92267 0.604928C8.95587 0.57173 8.99528 0.545397 9.03865 0.527431C9.08203 0.509465 9.12852 0.500217 9.17546 0.500217C9.22241 0.500217 9.2689 0.509465 9.31227 0.527431C9.35565 0.545397 9.39506 0.57173 9.42826 0.604928C9.46145 0.638125 9.48779 0.677536 9.50575 0.72091C9.52372 0.764284 9.53297 0.810772 9.53297 0.85772C9.53297 0.904668 9.52372 0.951157 9.50575 0.994531C9.48779 1.03791 9.46145 1.07732 9.42826 1.11051L5.14364 5.39513C5.11047 5.42838 5.07107 5.45477 5.02769 5.47276C4.98431 5.49077 4.93781 5.50003 4.89084 5.50003C4.84388 5.50003 4.79738 5.49077 4.754 5.47276C4.71062 5.45477 4.67122 5.42838 4.63805 5.39513L0.353433 1.11051C0.320182 1.07735 0.293801 1.03794 0.275801 0.994567C0.257801 0.951188 0.248535 0.904685 0.248535 0.85772C0.248535 0.810756 0.257801 0.764252 0.275801 0.720874C0.293801 0.677496 0.320182 0.638095 0.353433 0.604928Z" fill="white" />
+                                    </svg>
+                                </a>
+                                <div class="header-sub-menu" >
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Архивы</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Библиотеки</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Музеи</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Промышленные предприятия</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Медицинские учреждения</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">МВД</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Университет</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-news.html" class="header-sub-menu__link">Галереи</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">
+                                    Для клиентов
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.353433 0.604928C0.3866 0.571677 0.426001 0.545296 0.469379 0.527296C0.512757 0.509296 0.55926 0.500031 0.606225 0.500031C0.65319 0.500031 0.699693 0.509296 0.743071 0.527296C0.78645 0.545296 0.825851 0.571677 0.859018 0.604928L4.89084 4.63747L8.92267 0.604928C8.95587 0.57173 8.99528 0.545397 9.03865 0.527431C9.08203 0.509465 9.12852 0.500217 9.17546 0.500217C9.22241 0.500217 9.2689 0.509465 9.31227 0.527431C9.35565 0.545397 9.39506 0.57173 9.42826 0.604928C9.46145 0.638125 9.48779 0.677536 9.50575 0.72091C9.52372 0.764284 9.53297 0.810772 9.53297 0.85772C9.53297 0.904668 9.52372 0.951157 9.50575 0.994531C9.48779 1.03791 9.46145 1.07732 9.42826 1.11051L5.14364 5.39513C5.11047 5.42838 5.07107 5.45477 5.02769 5.47276C4.98431 5.49077 4.93781 5.50003 4.89084 5.50003C4.84388 5.50003 4.79738 5.49077 4.754 5.47276C4.71062 5.45477 4.67122 5.42838 4.63805 5.39513L0.353433 1.11051C0.320182 1.07735 0.293801 1.03794 0.275801 0.994567C0.257801 0.951188 0.248535 0.904685 0.248535 0.85772C0.248535 0.810756 0.257801 0.764252 0.275801 0.720874C0.293801 0.677496 0.320182 0.638095 0.353433 0.604928Z" fill="white" />
+                                    </svg>                                    
+                                </a>
+                                <div class="header-sub-menu" >
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Архивы</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Библиотеки</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Музеи</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="single-project.html" class="header-sub-menu__link">Промышленные предприятия</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="header-sub-menu__list">
+                                        <li class="header-sub-menu__item">
+                                            <a href="#" class="header-sub-menu__link">Медицинские учреждения</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="#" class="header-sub-menu__link">МВД</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="#" class="header-sub-menu__link">Университет</a>
+                                        </li>
+                                        <li class="header-sub-menu__item">
+                                            <a href="#" class="header-sub-menu__link">Галереи</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="contacts.html" class="header-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-bottom__right">
+                    <form class="h-search-form">
+
+                        <input type="text" name="s" required>
+                        
+
+                        <button class="h-search-form__submit">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.5262 20L20.4795 19.0467L14.7274 13.2947C16.0731 11.7031 16.7516 9.65302 16.6211 7.5729C16.4906 5.49279 15.5612 3.54359 14.0272 2.13265C12.4932 0.721722 10.4733 -0.0417596 8.38951 0.00176361C6.30576 0.0452868 4.31945 0.892447 2.84569 2.3662C1.37194 3.83996 0.524779 5.82626 0.481256 7.91001C0.437733 9.99376 1.20121 12.0137 2.61215 13.5477C4.02308 15.0817 5.97228 16.0111 8.05239 16.1416C10.1325 16.2721 12.1826 15.5936 13.7742 14.248L19.5262 20ZM15.2903 8.07851C15.2901 9.8642 14.5806 11.5767 13.3178 12.8392C12.055 14.1018 10.3423 14.811 8.55666 14.8108C6.77097 14.8106 5.05849 14.1011 3.79595 12.8383C2.5334 11.5755 1.82421 9.86285 1.82439 8.07716C1.82457 6.29148 2.5341 4.579 3.7969 3.31646C5.0597 2.05391 6.77232 1.34472 8.558 1.3449C10.3437 1.34508 12.0562 2.05461 13.3187 3.31741C14.5813 4.5802 15.2904 6.29282 15.2903 8.07851Z" fill="white" />
+                            </svg>
+                        </button>
+
+                        <div class="h-search-form__reset">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="header-catalog">
+            <div class="container">
+                <div class="header-catalog__blocks">
+                    <div class="header-catalog__group">
+                        <p class="header-catalog__title-group">По типу</p>
+
+                        <ul class="header-catalog__list">
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Архивы</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Библиотеки</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Музеи</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Промышленные предприятия</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Медицинские учреждения</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">МВД</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Университет</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Галереи</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Картины</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Выставки</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="header-catalog__group">
+                        <p class="header-catalog__title-group">По назначению</p>
+
+                        <ul class="header-catalog__list">
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Архивы</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Библиотеки</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Музеи</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Промышленные предприятия</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Медицинские учреждения</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">МВД</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Университет</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Галереи</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Картины</a></li>
+                            <li class="header-catalog__item"><a href="shop.html" class="header-sub-menu__link">Выставки</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu__inner">
+            <button class="mobile-menu__close">
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a href="index.html" class="header-logo">
+                <img src="assets/img/light-logo.svg" alt="" class="header-logo__img">
+                <span class="header-logo__line"></span>
+                <span class="header-logo__text">Производство<br/>стеллажей</span>
+            </a>
+
+            <div class="mobile-menu__nav-container">
+                <div class="mobile-menu__nav-single-group">
+                    <p class="mobile-menu__submenu-title">Меню</p>
+                    <div id="accordion-menu" class="itc-accordion">
+                        <a href="services.html" class="mobile-menu__link">Услуги</a>
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                Наши проекты
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="single-project.html">Архивы</a>
+                                    <a href="single-project.html">Библиотеки</a>
+                                    <a href="single-project.html">Музеи</a>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                О компании
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="about.html">О компании</a>
+                                    <a href="how-make-order.html">Как сделать заказ</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                Новости
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="news-archive.html">Все новости</a>
+                                    <a href="news-archive.html">Архивы</a>
+                                    <a href="news-archive.html">МВД</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                Для клиентов
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="news-archive.html">Архивы</a>
+                                    <a href="news-archive.html">МВД</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contacts.html" class="mobile-menu__link">Контакты</a>
+                    </div>
+                </div>
+
+                <div class="mobile-menu__nav-single-group">
+                    <p class="mobile-menu__submenu-title">Каталог</p>
+                    <div id="accordion-catalog" class="itc-accordion">
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                По типу
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="shop.html">Архивы</a>
+                                    <a href="shop.html">Библиотеки</a>
+                                    <a href="shop.html">Музеи</a>                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itc-accordion-item">
+                            <div class="itc-accordion-header">
+                                По назначению
+                            </div>
+                            <div class="itc-accordion-body">
+                                <div class="itc-accordion-content">
+                                    <a href="shop.html">Промышленные предприятия</a>
+                                    <a href="shop.html">Медицинские учреждения</a>
+                                    <a href="shop.html">МВД</a>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+    
+                
+            </div>
+
+            
+
+
+            <div class="mobile-menu__contacts">
+                <a href="tel:+74957488930" class="header-phone">
+                    <span class="header-phone__number">+7 (495) 748 89 30</span>
+                    <span class="header-phone__comment">Звонок по России бесплатный</span>
+                </a>
+    
+                <div class="header-contacts">
+                    <a href="#" >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mail-icon">
+                            <path d="M1.06667 6.07333C1.20109 5.48432 1.53154 4.95842 2.0039 4.58174C2.47625 4.20507 3.06251 3.99996 3.66667 4H19.6667C20.2708 3.99996 20.8571 4.20507 21.3294 4.58174C21.8018 4.95842 22.1322 5.48432 22.2667 6.07333L11.6667 12.552L1.06667 6.07333ZM1 7.596V17.068L8.73733 12.324L1 7.596ZM10.0147 13.1067L1.25467 18.476C1.4711 18.9324 1.8127 19.3179 2.23971 19.5877C2.66672 19.8575 3.16157 20.0005 3.66667 20H19.6667C20.1717 20.0001 20.6663 19.8568 21.0931 19.5868C21.5199 19.3168 21.8612 18.9311 22.0773 18.4747L13.3173 13.1053L11.6667 14.1147L10.0147 13.1053V13.1067ZM14.596 12.3253L22.3333 17.068V7.596L14.596 12.324V12.3253Z" fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="telegram-icon">
+                            <path d="M9.65416 14.8791L9.34848 19.9097C9.79764 19.9097 9.99609 19.684 10.2468 19.4163L12.4048 17.1113L16.8944 20.7548C17.7206 21.2556 18.317 20.9963 18.5228 19.9122L21.47 4.65647C21.7718 3.32761 21.0089 2.7249 20.2184 3.11908L2.91222 10.4492C1.73091 10.9697 1.7378 11.6936 2.69689 12.0162L7.13806 13.5388L17.4198 6.41357C17.9052 6.09026 18.3507 6.26408 17.9851 6.62053L9.65391 14.8789L9.65416 14.8791Z" fill="white" />
+                          </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg" class="whatsapp-icon">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.718653 18.4133L4.31419 17.4705L4.66109 17.6763C6.11967 18.5415 7.79164 18.9993 9.49633 19H9.50018C14.7363 19 18.9979 14.7398 19 9.50344C19.001 6.96592 18.0138 4.58001 16.2202 2.78496C14.4266 0.989918 12.0414 0.000879454 9.50392 0C4.26378 0 0.00208105 4.25978 8.05564e-07 9.49574C-0.000734203 11.2901 0.501518 13.0377 1.45248 14.5496L1.67836 14.909L0.718653 18.4133ZM14.8673 11.964C15.0665 12.0603 15.201 12.1252 15.2584 12.2211C15.3298 12.3401 15.3298 12.9117 15.0919 13.5787C14.8538 14.2455 13.7129 14.8542 13.1641 14.9361C12.6721 15.0096 12.0495 15.0403 11.3654 14.823C10.9506 14.6914 10.4187 14.5158 9.73728 14.2216C7.05992 13.0659 5.25058 10.4719 4.90862 9.98169C4.88466 9.94735 4.86791 9.92333 4.85856 9.91085L4.85626 9.90777C4.70512 9.70619 3.69242 8.35549 3.69242 6.95758C3.69242 5.64255 4.33862 4.95328 4.63606 4.63601C4.65644 4.61427 4.67518 4.59428 4.69197 4.57595C4.95374 4.29013 5.26316 4.21868 5.45354 4.21868C5.64391 4.21868 5.83451 4.22044 6.0009 4.22879C6.02143 4.22982 6.04279 4.2297 6.06487 4.22957C6.2313 4.22859 6.43878 4.22738 6.64347 4.71886C6.72221 4.90801 6.83743 5.18842 6.95896 5.48417C7.20471 6.08223 7.47622 6.74301 7.52399 6.83864C7.59541 6.98155 7.64299 7.1482 7.5478 7.33882C7.53351 7.3674 7.52029 7.39437 7.50767 7.42014C7.43617 7.56606 7.38357 7.6734 7.26222 7.81503C7.2145 7.87073 7.16518 7.93077 7.11587 7.99081C7.01761 8.11042 6.91937 8.23002 6.83382 8.31522C6.69085 8.45757 6.54202 8.61203 6.70861 8.89784C6.8752 9.18366 7.44837 10.1185 8.29737 10.8755C9.21002 11.6893 10.0032 12.0332 10.4053 12.2076C10.4838 12.2416 10.5474 12.2692 10.5941 12.2925C10.8795 12.4355 11.0461 12.4116 11.2127 12.2211C11.3793 12.0305 11.9267 11.3874 12.117 11.1017C12.3074 10.816 12.4978 10.8635 12.7596 10.9588C13.0214 11.0541 14.4255 11.7447 14.7111 11.8876C14.7668 11.9155 14.819 11.9407 14.8673 11.964Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="header-buttons">
+                    <button class="header-btn header-btn-white" data-hystmodal="#quiz-modal">Рассчитать стоимость</button>
+                    <button class="header-btn header-btn-white" data-hystmodal="#feedback-modal">Заказать звонок</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <main>
+        
+
+        <section class="hero">
+            <img src="assets/img/index/hero/1.jpg" alt="" class="hero__bg">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="text-white">Производство и поставка библиотечного, архивного и музейного оборудования</h1>
+
+                    <div class="hero__btn-block">
+                        <button class="btn btn-blue" data-hystmodal="#quiz-modal">Рассчитать стоимость</button>
+                        <button class="btn red-gradient" data-hystmodal="#feedback-modal">Заказать звонок</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        
+
+        <div class="content-container">
+            <section class="inx-categories">
+                <div class="container">
+                    <h2>Основные категории продукции</h2>
+                    <div class="inx-categories-grid">
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Оборудование
+                                    фондохранилища</h3>
+                                <p class="inx-category-card__text text-3">Шкафы, стеллажи и др.оборудование для материалов и предметов в хранилищах фондов.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/1.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Стеллажи для архива стационарные</h3>
+                                <p class="inx-category-card__text text-3">Металлические стеллажи и шкафы для хранения архивной и бухгалтерской документации.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/2.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Стеллажи для архива мобильные</h3>
+                                <p class="inx-category-card__text text-3">Шкафы и стеллажи на мобильной базе (на рельсах) для компактного хранения</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/3.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Стеллажи для архива регистратуры</h3>
+                                <p class="inx-category-card__text text-3">Металлические стеллажи и шкафы для хранения архивной и бухгалтерской документации.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/4.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Стеллажи для проектной документации</h3>
+                                <p class="inx-category-card__text text-3">Большеформатные стеллажи и шкафы для хранения чертежей, схем, проектов А1, А0 форматов.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/5.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Стеллажи для живописи и икон</h3>
+                                <p class="inx-category-card__text text-3">Витрины, стеллажи и вспомогательное оборудование для картинных галерей, мастерских, фондов.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/6.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Музейное оборудование</h3>
+                                <p class="inx-category-card__text text-3">Шкафы, витрины, стеллажи для экспозиций и выставок, открытых и закрытых фондов.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/7.png" alt="">
+                            </div>
+                        </a>
+    
+                        <a href="shop.html" class="inx-category-card">
+                            <div class="inx-category-card__text-block">
+                                <h3>Библиотечное оборудование</h3>
+                                <p class="inx-category-card__text text-3">Витрины, картотеки, стеллажи для книг. Мебель для читального зала.</p>
+                            </div>
+                            <div class="inx-category-card__img-block">
+                                <img src="assets/img/categories/8.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="inx-categories__link-wrap">
+                        <a href="catalog.html" class="arrow-link blue">
+                            Весь каталог
+                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-shelving">
+                <div class="container">
+                    <h2>Мы можем оборудовать стеллажами:</h2>
+
+                    <div class="as-list">
+                        <div class="as-card">
+                            <ul class="red-dotts">
+                                <li>Залы, кабинеты</li>
+                                <li>Склады</li>
+                                <li>Помещения картотек больниц, поликлинник</li>
+                                <li>Музеи, библиотеки</li>
+                                <li>Архивы государственных структур</li>
+                                <li>Логистические центры</li>
+                                
+                            </ul>
+                        </div>
+
+                        <div class="as-card img">
+                            <img src="assets/img/shelving/1.png" alt="">
+                            <div class="as-card__caption-layer">
+                                <h3>Архивы</h3>
+                                
+                               
+                            </div>
+                        </div>
+                        <div class="as-card img">
+                            <img src="assets/img/shelving/2.png" alt="">
+                            <div class="as-card__caption-layer">
+                                <h3>Склады</h3>                                
+                            </div>
+                        </div>
+                        <div class="as-card img">
+                            <img src="assets/img/shelving/3.png" alt="">
+                            <div class="as-card__caption-layer">
+                                <h3>Картотеки</h3>                                
+                            </div>
+                        </div>
+                        <div class="as-card img">
+                            <img src="assets/img/shelving/4.png" alt="">
+                            <div class="as-card__caption-layer">
+                                <h3>Кабинеты</h3>
+                                
+                            </div>
+                        </div>
+                        <div class="as-card img">
+                            <img src="assets/img/shelving/5.png" alt="">
+                            <div class="as-card__caption-layer">
+                                <h3>Музеи</h3>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="about-content__left-col">
+                            <h2>о компании</h2>
+                            <div class="about-content__text-col">
+                                <p class="text-2">Фирма «АСТ Групп» была основана в 2006 году. Основным видом деятельности предприятия стала торговля передвижными и стационарными стеллажами. С 2009 г. и до сегодняшнего дня АСТ Групп является одним из лидеров в области архивного и библиотечного оборудования.</p>
+                                <p class="text-2">Изначально наша компания осуществляла поставки оборудования на территории г. Москвы и Московской области. Однако, уже в 2007 г. благодаря безупречной репутации о нас узнали в других регионах России. На сегодняшний день мы осуществляем поставки в города Челябинск, Екатеринбург, Нижний Новгород, Санкт-Петербург, Казань, Самара, Ростов, Красноярск, Кемерово, Калуга, Благовещенск, Братск, Сургут, Тюмень, Новгород, Абакан, Москва, Новосибирск, Омск, Уфа, Барнаул, Воронеж, Калининград. Так же, поставляем передвижные стеллажи в Казахстан, Белоруссию и другие страны СНГ.</p>
+                            </div>
+                        </div>
+                        <div class="about-content__right-col">
+                            <img src="assets/img/Russia.svg" alt="" class="about-content__map">
+
+                            <div class="about-results">
+                                <div class="about-results__item">
+                                    <img src="assets/img/light-logo.svg" alt="" class="about-results__logo">
+                                </div>
+                                <div class="about-results__item">
+                                    <div class="about-results__num">50 000</div>
+                                    <div class="about-results__caption">м2 стеллажей</div>
+                                </div>
+                                <div class="about-results__item">
+                                    <div class="about-results__num">100</div>
+                                    <div class="about-results__caption">довольных<br> клиентов</div>
+                                </div>
+                                <div class="about-results__item">
+                                    <div class="about-results__num">10</div>
+                                    <div class="about-results__caption">лет на рынке</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="partners">
+                <div class="container">
+                    <h2>Нам доверяют:</h2>
+
+                    <div class="partners-container">
+                        <button class="slider-nav slider-prev partners-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24999 12.7071C5.15303 12.6166 5.07571 12.5072 5.02285 12.3856C4.96999 12.2639 4.94272 12.1327 4.94272 12.0001C4.94272 11.8675 4.96999 11.7363 5.02285 11.6147C5.07571 11.493 5.15303 11.3836 5.24999 11.2931L13.65 3.29311C13.8514 3.10477 14.1168 3 14.3925 3C14.6682 3 14.9336 3.10477 15.135 3.29311C15.2319 3.38359 15.3093 3.49304 15.3621 3.61467C15.415 3.73629 15.4423 3.86749 15.4423 4.00011C15.4423 4.13273 15.415 4.26393 15.3621 4.38555C15.3093 4.50718 15.2319 4.61663 15.135 4.70711L7.47699 12.0001L15.135 19.2931C15.2319 19.3836 15.3093 19.493 15.3621 19.6147C15.415 19.7363 15.4423 19.8675 15.4423 20.0001C15.4423 20.1327 15.415 20.2639 15.3621 20.3856C15.3093 20.5072 15.2319 20.6166 15.135 20.7071C14.725 21.0971 14.06 21.0971 13.65 20.7071L5.24999 12.7071Z" fill="white" />
+                              </svg>
+                        </button>
+                        <button class="slider-nav slider-next partners-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 12.7071C18.847 12.6166 18.9243 12.5072 18.9771 12.3856C19.03 12.2639 19.0573 12.1327 19.0573 12.0001C19.0573 11.8675 19.03 11.7363 18.9771 11.6147C18.9243 11.493 18.847 11.3836 18.75 11.2931L10.35 3.29311C10.1486 3.10477 9.88323 3 9.60751 3C9.3318 3 9.06638 3.10477 8.86501 3.29311C8.76805 3.38359 8.69074 3.49304 8.63788 3.61467C8.58502 3.73629 8.55774 3.86749 8.55774 4.00011C8.55774 4.13273 8.58502 4.26393 8.63788 4.38555C8.69074 4.50718 8.76805 4.61663 8.86501 4.70711L16.523 12.0001L8.86501 19.2931C8.76805 19.3836 8.69074 19.493 8.63788 19.6147C8.58502 19.7363 8.55774 19.8675 8.55774 20.0001C8.55774 20.1327 8.58502 20.2639 8.63788 20.3856C8.69074 20.5072 8.76805 20.6166 8.86501 20.7071C9.27501 21.0971 9.94001 21.0971 10.35 20.7071L18.75 12.7071Z" fill="white" />
+                              </svg>
+                        </button>
+                        <div class="partners-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-1.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-2.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-3.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-4.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/parner-5.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-1.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-2.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-3.svg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/partner-4.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/partners/parner-5.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </section>
+
+
+            <section class="s-advantages">
+                <div class="container">
+                    <h2>Преимущества работы с компанией АСТ Групп</h2>
+
+                    <div class="advantages">
+                        <div class="advantages__line">
+                            
+                        </div>
+                        <div class="advantages-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/1.svg" alt="">
+                                    </div>
+                                    <p class="text-3">собственное 
+                                        производство</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/2.svg" alt="">
+                                    </div>
+                                    <p class="text-3">работа со 
+                                        сложными проектами</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/3.svg" alt="">
+                                    </div>
+                                    <p class="text-3">гарантия
+                                        качества</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/4.svg" alt="">
+                                    </div>
+                                    <p class="text-3">отрисовка
+                                        проекта</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/5.svg" alt="">
+                                    </div>
+                                    <p class="text-3">выделенный
+                                        менеджер</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/6.svg" alt="">
+                                    </div>
+                                    <p class="text-3">работа с
+                                        тендерами</p>
+                                </div>
+
+                                <div class="swiper-slide advantage-item">
+                                    <div class="advantage-item__icon">
+                                        <img src="assets/img/advantages/7.svg" alt="">
+                                    </div>
+                                    <p class="text-3">опыт работы
+                                        более 20 лет</p>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar">
+                            
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sip-form">
+                <div class="container">
+                    <div class="ip-form-block">
+                        <div class="ip-form-block__form-container">
+                            <div class="ip-form-block__title-block">
+                                <h2 class="h3">Получите бесплатную консультацию специалиста</h2>
+                                <p class="text-2">Укажите ваш номер телефона и мы перезвоним вам в ближайшее время</p>
+                            </div>
+                            <form class="ip-form">
+                                <div class="ip-form__inputs-block">
+                                    <div class="ip-form__input-wrap">
+                                        <input type="text" class="ip-form__input" name="name" placeholder="Ваше имя*" required>
+                                    </div>
+                                    <div class="ip-form__input-wrap">
+                                        <input type="tel" class="ip-form__input" name="phone" placeholder="Ваш телефон*" required>
+                                    </div>
+                                </div>
+
+                                <div class="ip-form__bottom-block">
+                                    <div class="ip-form__privacy-block">
+                                        <label  class="form-approve">
+                                            <input type="checkbox" name="approve" checked class="form-approve__input-checkbox">
+                                            <span class="form-approve__visible-cb"></span>
+                                            <span class="form-approve__text text-3">Я согласен на обработку персональных данных</span>
+                                        </label>
+
+
+                                        <a href="#" class="ip-form__privacy-link" target="_blank">Политика конфиденциальности</a>
+                                    </div>
+
+                                    <button class="ip-form__submit btn btn-red red-shadow">Заказать звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <img src="assets/img/phone.png" alt="" class="ip-form-block__img-block">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="reviews">
+                <div class="container">
+                    <h2>отзывы клиентов</h2>
+                </div>
+
+
+                <div class="reviews-content">
+                    <div class="container">
+                        <div class="reviews-slider-container">
+                            <button class="slider-nav slider-prev reviews-prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.24999 12.7071C5.15303 12.6166 5.07571 12.5072 5.02285 12.3856C4.96999 12.2639 4.94272 12.1327 4.94272 12.0001C4.94272 11.8675 4.96999 11.7363 5.02285 11.6147C5.07571 11.493 5.15303 11.3836 5.24999 11.2931L13.65 3.29311C13.8514 3.10477 14.1168 3 14.3925 3C14.6682 3 14.9336 3.10477 15.135 3.29311C15.2319 3.38359 15.3093 3.49304 15.3621 3.61467C15.415 3.73629 15.4423 3.86749 15.4423 4.00011C15.4423 4.13273 15.415 4.26393 15.3621 4.38555C15.3093 4.50718 15.2319 4.61663 15.135 4.70711L7.47699 12.0001L15.135 19.2931C15.2319 19.3836 15.3093 19.493 15.3621 19.6147C15.415 19.7363 15.4423 19.8675 15.4423 20.0001C15.4423 20.1327 15.415 20.2639 15.3621 20.3856C15.3093 20.5072 15.2319 20.6166 15.135 20.7071C14.725 21.0971 14.06 21.0971 13.65 20.7071L5.24999 12.7071Z" fill="#222222" />
+                                  </svg>
+                            </button>
+                            <button class="slider-nav slider-next reviews-next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.75 12.7071C18.847 12.6166 18.9243 12.5072 18.9771 12.3856C19.03 12.2639 19.0573 12.1327 19.0573 12.0001C19.0573 11.8675 19.03 11.7363 18.9771 11.6147C18.9243 11.493 18.847 11.3836 18.75 11.2931L10.35 3.29311C10.1486 3.10477 9.88323 3 9.60751 3C9.3318 3 9.06638 3.10477 8.86501 3.29311C8.76805 3.38359 8.69074 3.49304 8.63788 3.61467C8.58502 3.73629 8.55774 3.86749 8.55774 4.00011C8.55774 4.13273 8.58502 4.26393 8.63788 4.38555C8.69074 4.50718 8.76805 4.61663 8.86501 4.70711L16.523 12.0001L8.86501 19.2931C8.76805 19.3836 8.69074 19.493 8.63788 19.6147C8.58502 19.7363 8.55774 19.8675 8.55774 20.0001C8.55774 20.1327 8.58502 20.2639 8.63788 20.3856C8.69074 20.5072 8.76805 20.6166 8.86501 20.7071C9.27501 21.0971 9.94001 21.0971 10.35 20.7071L18.75 12.7071Z" fill="#222222" />
+                                  </svg>
+                            </button>
+
+                            <div class="reviews-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="assets/img/reviews/review-1.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-1.jpg" alt="">
+                                    </a>
+    
+                                    <a href="assets/img/reviews/review-2.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-2.jpg" alt="">
+                                    </a>
+    
+                                    <a href="assets/img/reviews/review-3.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-3.jpg" alt="">
+                                    </a>
+    
+                                    <a href="assets/img/reviews/review-4.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-4.jpg" alt="">
+                                    </a>
+                                    <a href="assets/img/reviews/review-1.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-1.jpg" alt="">
+                                    </a>
+    
+                                    <a href="assets/img/reviews/review-2.jpg" class="swiper-slide" data-fancybox="reviews">
+                                        <img src="assets/img/reviews/review-2.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="slider-pagination reviews-pagination"></div>
+                        </div>
+                        <div class="inx-categories__link-wrap">
+                            <a href="reviews.html" class="arrow-link black">
+                                Все отзывы
+                                <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#222" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+
+            <section class="last-news">
+                <div class="container">
+                    <h2>новости</h2>
+
+                    <div class="last-news-list swiper">
+                        <div class="swiper-wrapper">
+                            <a href="single-news.html" class="swiper-slide last-news-card">
+                                <div class="last-news-card__img-block">
+                                    <img src="assets/img/news/1.png" alt="">
+                                </div>
+                                <div class="last-news-card__text-block">
+                                    <h3 class="text-1">Итоги 2024 года</h3>
+                                    <p class="text-3">Прошедший год принёс немало полезного и интересного в жизни нашей компании. Завершено более сотни больших и малых проектов, в производство внедрена новинка...</p>
+                                    <p class="text-4 text-right">30.01.2025</p>
+                                </div>
+                            </a>
+                            <a href="single-news.html" class="swiper-slide last-news-card">
+                                <div class="last-news-card__img-block">
+                                    <img src="assets/img/news/1.png" alt="">
+                                </div>
+                                <div class="last-news-card__text-block">
+                                    <h3 class="text-1">Итоги 2024 года</h3>
+                                    <p class="text-3">Прошедший год принёс немало полезного и интересного в жизни нашей компании. Завершено более сотни больших и малых проектов, в производство внедрена новинка...</p>
+                                    <p class="text-4 text-right">30.01.2025</p>
+                                </div>
+                            </a>
+                            <a href="single-news.html" class="swiper-slide last-news-card">
+                                <div class="last-news-card__img-block">
+                                    <img src="assets/img/news/1.png" alt="">
+                                </div>
+                                <div class="last-news-card__text-block">
+                                    <h3 class="text-1">Итоги 2024 года</h3>
+                                    <p class="text-3">Прошедший год принёс немало полезного и интересного в жизни нашей компании. Завершено более сотни больших и малых проектов, в производство внедрена новинка...</p>
+                                    <p class="text-4 text-right">30.01.2025</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="inx-categories__link-wrap">
+                        <a href="news-archive.html" class="arrow-link black">
+                            Все новости
+                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#222" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="inx-contacts">
+                <div class="container">
+                    <h2>Контактная информация</h2>
+
+
+                    <div class="inx-contacts__contact-block">
+                        <ul>
+                            <li>
+                                <address  class="contact-item red">
+                                    <svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.54535 0C3.33737 0 0.72699 2.59998 0.72699 5.79436C0.72699 9.75994 5.93416 15.5807 6.15576 15.8263C6.36375 16.0583 6.72695 16.0575 6.93495 15.8263C7.15655 15.5807 12.3637 9.75994 12.3637 5.79436C12.3637 2.59998 9.75333 0 6.54535 0ZM6.54535 8.71034C5.77062 8.7112 5.0272 8.40463 4.47826 7.85794C3.92932 7.31125 3.6197 6.56909 3.61737 5.79436C3.61737 4.18637 4.93176 2.87998 6.54535 2.87998C7.31981 2.87934 8.0629 3.18589 8.61165 3.73239C9.1604 4.27888 9.46999 5.02071 9.47254 5.79516C9.46978 6.56948 9.16009 7.3111 8.61137 7.85742C8.06264 8.40375 7.31967 8.71099 6.54535 8.71034Z" fill="#EC5555" />
+                                    </svg>
+                                    <span>г. Москва, ул. Шипиловская, д.12</span>
+                                </address>
+                            </li>
+                            <li>
+                                <a href="mailto:info@ast-grup.ru" class="contact-item red">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.0666667 2.07333C0.201091 1.48432 0.53154 0.958417 1.0039 0.581744C1.47625 0.205072 2.06251 -4.06592e-05 2.66667 6.04552e-09H18.6667C19.2708 -4.06592e-05 19.8571 0.205072 20.3294 0.581744C20.8018 0.958417 21.1322 1.48432 21.2667 2.07333L10.6667 8.552L0.0666667 2.07333ZM0 3.596V13.068L7.73733 8.324L0 3.596ZM9.01466 9.10667L0.254667 14.476C0.471102 14.9324 0.812702 15.3179 1.23971 15.5877C1.66671 15.8575 2.16157 16.0005 2.66667 16H18.6667C19.1717 16.0001 19.6663 15.8568 20.0931 15.5868C20.5199 15.3168 20.8612 14.9311 21.0773 14.4747L12.3173 9.10533L10.6667 10.1147L9.01466 9.10533V9.10667ZM13.596 8.32533L21.3333 13.068V3.596L13.596 8.324V8.32533Z" fill="#E76A6A" />
+                                    </svg>
+                                    <span>info@ast-grup.ru</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+74957488930" class="contact-item red">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.07837 12.2209C7.57045 14.7214 10.6032 16.6475 13.0784 16.6475C14.185 16.6475 15.1565 16.2589 15.9337 15.3972C16.3899 14.8903 16.6687 14.3074 16.6687 13.7245C16.6687 13.2768 16.4913 12.8375 16.0604 12.5334L13.467 10.6918C13.053 10.4046 12.7151 10.2694 12.411 10.2694C12.014 10.2694 11.6591 10.4891 11.2706 10.8777L10.6623 11.4859C10.5609 11.5788 10.4427 11.6211 10.3329 11.6211C10.1977 11.6211 10.071 11.5704 9.9865 11.5197C9.45429 11.2325 8.54194 10.4553 7.69716 9.6105C6.85239 8.76573 6.06675 7.86182 5.78798 7.32117C5.73729 7.22824 5.69505 7.10997 5.69505 6.97481C5.69505 6.87344 5.72884 6.75517 5.82177 6.6538L6.43 6.03711C6.81015 5.64007 7.03824 5.29371 7.03824 4.89667C7.03824 4.5841 6.90308 4.24619 6.61585 3.8407L4.7827 1.27259C4.47013 0.833311 4.03085 0.647461 3.54933 0.647461C2.97488 0.647461 2.40044 0.900893 1.90202 1.38241C1.05725 2.1765 0.685547 3.16488 0.685547 4.25464C0.685547 6.72983 2.58629 9.72877 5.07837 12.2209Z" fill="#EC5555" />                                        
+                                    </svg>
+                                    <span>+7 (495) 748-89-30</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/+79257724494" class="contact-item red">
+                                    <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.8037 10.5592L6.53198 15.0308C6.93123 15.0308 7.10764 14.8302 7.33049 14.5922L9.24872 12.5434L13.2395 15.7821C13.9739 16.2272 14.504 15.9967 14.6869 15.0331L17.3067 1.47242C17.5749 0.291209 16.8968 -0.244533 16.1942 0.105845L0.810865 6.6215C-0.239189 7.08414 -0.233067 7.72763 0.619462 8.01436L4.56716 9.3678L13.7065 3.03429C14.138 2.7469 14.5339 2.90141 14.2089 3.21825L6.80347 10.559L6.8037 10.5592Z" fill="#E76A6A" />
+                                    </svg>
+                                    <span>+7 (925) 772-44-94</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+79295485811" class="contact-item red">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.07837 12.2209C7.57045 14.7214 10.6032 16.6475 13.0784 16.6475C14.185 16.6475 15.1565 16.2589 15.9337 15.3972C16.3899 14.8903 16.6687 14.3074 16.6687 13.7245C16.6687 13.2768 16.4913 12.8375 16.0604 12.5334L13.467 10.6918C13.053 10.4046 12.7151 10.2694 12.411 10.2694C12.014 10.2694 11.6591 10.4891 11.2706 10.8777L10.6623 11.4859C10.5609 11.5788 10.4427 11.6211 10.3329 11.6211C10.1977 11.6211 10.071 11.5704 9.9865 11.5197C9.45429 11.2325 8.54194 10.4553 7.69716 9.6105C6.85239 8.76573 6.06675 7.86182 5.78798 7.32117C5.73729 7.22824 5.69505 7.10997 5.69505 6.97481C5.69505 6.87344 5.72884 6.75517 5.82177 6.6538L6.43 6.03711C6.81015 5.64007 7.03824 5.29371 7.03824 4.89667C7.03824 4.5841 6.90308 4.24619 6.61585 3.8407L4.7827 1.27259C4.47013 0.833311 4.03085 0.647461 3.54933 0.647461C2.97488 0.647461 2.40044 0.900893 1.90202 1.38241C1.05725 2.1765 0.685547 3.16488 0.685547 4.25464C0.685547 6.72983 2.58629 9.72877 5.07837 12.2209Z" fill="#EC5555" />                                        
+                                    </svg>
+                                    <span>+7 (929) 548-58-11</span>
+                                </a>
+                            </li>
+                            <li>                                    
+                                <a href="https://wa.me/79295485811" class="contact-item red">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.643005 16.4751L3.86007 15.6315L4.17045 15.8156C5.4755 16.5898 6.97146 16.9994 8.49671 17H8.50016C13.1851 17 16.9981 13.1882 17 8.50307C17.0009 6.23267 16.1176 4.0979 14.5128 2.49181C12.908 0.885716 10.7738 0.00078688 8.5035 0C3.81496 0 0.00186138 3.81138 0 8.49619C-0.000657533 10.1017 0.448726 11.6653 1.29959 13.0181L1.50169 13.3396L0.643005 16.4751ZM13.3023 10.7048C13.4806 10.7909 13.6009 10.8491 13.6523 10.9348C13.7161 11.0413 13.7161 11.5528 13.5033 12.1495C13.2903 12.7462 12.2695 13.2907 11.7785 13.3641C11.3383 13.4299 10.7812 13.4573 10.1691 13.2628C9.79791 13.1451 9.32198 12.988 8.71233 12.7248C6.3168 11.6908 4.69792 9.36982 4.39195 8.93116C4.37052 8.90043 4.35553 8.87894 4.34716 8.86777L4.3451 8.86502C4.20986 8.68465 3.30378 7.47614 3.30378 6.22538C3.30378 5.04877 3.88195 4.43205 4.14809 4.14818C4.16632 4.12873 4.18309 4.11084 4.19811 4.09444C4.43232 3.83871 4.70917 3.77478 4.87951 3.77478C5.04984 3.77478 5.22038 3.77635 5.36926 3.78383C5.38763 3.78475 5.40674 3.78464 5.42649 3.78452C5.5754 3.78365 5.76104 3.78256 5.94418 4.22231C6.01464 4.39156 6.11774 4.64247 6.22648 4.90711C6.44636 5.44221 6.68928 6.0334 6.73202 6.11895C6.79592 6.24682 6.83849 6.39593 6.75332 6.56648C6.74054 6.59205 6.72871 6.61619 6.71741 6.63925C6.65344 6.7698 6.60638 6.86584 6.4978 6.99257C6.45511 7.0424 6.41098 7.09613 6.36685 7.14984C6.27894 7.25687 6.19104 7.36387 6.1145 7.4401C5.98658 7.56748 5.85341 7.70567 6.00247 7.9614C6.15153 8.21713 6.66436 9.05357 7.42399 9.73092C8.24057 10.459 8.95028 10.7667 9.31002 10.9227C9.38027 10.9532 9.43717 10.9779 9.47892 10.9987C9.73435 11.1266 9.88342 11.1052 10.0325 10.9348C10.1815 10.7643 10.6713 10.1889 10.8416 9.93324C11.0119 9.67761 11.1823 9.72018 11.4165 9.80539C11.6508 9.89072 12.9071 10.5086 13.1626 10.6364C13.2125 10.6614 13.2591 10.6839 13.3023 10.7048Z" fill="#E76A6A" />
+                                    </svg>
+                                    <span>+7 (929) 548-58-11</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                        <button class="btn btn-red red-shadow" data-hystmodal="#feedback-modal">Заказать обратный звонок</button>
+                    </div>
+
+
+                    <div class="inx-contacts__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9cb2f03dc7eaae353f3432a2e5ea181c3083f8056276b479960f36dbf1f02611&amp;source=constructor" ></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+@@include('templates/footer.html')

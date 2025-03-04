@@ -1,0 +1,132 @@
+.project-card{
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    overflow: hidden;
+    @include mx-text-2;
+
+
+    &:hover{
+        .project-card__img img{
+            transform: translate(-50%, -50%) scale(1.05);    
+        }
+
+        
+    }
+}
+.project-card.swiper-slide{
+    height: auto;
+}
+.project-card__img {
+    aspect-ratio: 100 / 75;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+    img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        transition: 500ms ease;
+    }
+}
+.project-card__body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 40px;
+    padding: 20px 10px 30px;
+    justify-content: space-between
+}
+
+
+
+.project-card__text{
+    
+    @include mx-text-3;
+    font-weight: 500;
+    text-align: center;
+}
+.project-card__btn-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-card__btn{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 30px;
+    border: 1px solid var(--red);
+    border-radius: 40px;
+
+    svg{
+        transition: 300ms ease;
+    }
+
+    &:hover{
+        background: var(--red);
+        color: #fff;
+        path{
+            fill: #fff;
+        }
+        svg{
+            transform: translate(4px, 0);
+        }
+    }
+
+    
+}
+
+.project-card__information{
+    width: calc(100% - 20px);
+    bottom: 50px;
+    left: 10px;
+    position: absolute;
+    border-bottom: 1px solid #d92f2f;
+    border-radius: 8px;
+    padding: 10px;
+    backdrop-filter: blur(14px);
+    background: var(--red);
+    opacity: 0.9;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+
+
+    @include calculateResponsiveProperty(1024px, 1920px, 14px, 18px, font-size);
+
+}
+
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+
+    @media (min-width: 540px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 800px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1100px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

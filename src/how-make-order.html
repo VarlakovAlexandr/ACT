@@ -1,0 +1,97 @@
+@@include('templates/header.html', {"body-class": "bg-white"})
+
+<main>
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О компании</a>
+            <span>Как заказать</span>
+        </div>  
+    </nav>
+
+    <div class="content-container">
+        <section>
+            <div class="container">
+                <div class="how-make-order">
+                    <h1 class="h2">Как заказать металлические стеллажи:</h1>
+
+                    <div class="how-make-order__content">
+                        <div class="how-make-order__scheme-block">
+                            <div class="how-make-order__scheme">
+                                <img src="assets/img/shceme.jpg" alt="">
+                            </div>
+
+                            <p class="text-3 fs-italic">*Пример чертежа, который получает заказчик после наших замеров и согласования расстановки</p>
+                        </div>
+                        <div class="how-make-order__text-block">
+                            <div class="how-make-order__text">
+                                <p>Уважаемые господа!</p>
+                                <p>Расчет стоимости передвижных стеллажей производится на основании проекта подготовленного нашими специалистами. 
+                                    Для составления проекта от вас нужен только план помещения, где предполагается установка стеллажей.</p>
+                                <p>Если у Вас есть трудности с замером помещения, то мы можем отправить замерщика, который сам сделает все необходимые замеры.</p>
+                                <p>В результате работы по составлению проекта расстановки стеллажей вы абсолютно бесплатно получаете:</p>
+                                <ul class="dotted-list">
+                                    <li>план расстановки стеллажей</li>
+                                    <li>расчет стоимости стеллажей с разбивкой по комплектующим элементам</li>
+                                    <li>техническую документацию на поставку стеллажей с учетом нормативов и требований надзорных служб (противопожарной, Росархива, СЭС)</li>
+                                </ul>
+                            </div>
+                            <div class="how-make-order__btn-wrap">
+                                <button class="btn btn-dark-blue"  data-hystmodal="#feedback-modal">Заказать замер</button>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+
+                    <p class="text-2">Просто свяжитесь с нами по телефонам: 88005501590 или 8 (925) 772-44-94 (доступен WhatsApp и Телеграм) или отправьте письмо с запросом на нашу почту: info@ast-grup.ru<br/> 
+                        Если вы не нашли на нашем сайте необходимое оборудование или вам нужно изготовить его по индивидуальному заказу обратитесь к нам по телефонам 8 800 550 15 90 или 8 (925) 772-44-94. Наши специалисты свяжутся с вами и проконсультируют по всем интересующим вопросам.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sip-form">
+            <div class="container">
+                <div class="ip-form-block">
+                    <div class="ip-form-block__form-container">
+                        <div class="ip-form-block__title-block">
+                            <h2 class="h3">Получите бесплатную консультацию специалиста</h2>
+                            <p class="text-2">Укажите ваш номер телефона и мы перезвоним вам в ближайшее время</p>
+                        </div>
+                        <form class="ip-form">
+                            <div class="ip-form__inputs-block">
+                                <div class="ip-form__input-wrap">
+                                    <input type="text" class="ip-form__input" name="name" placeholder="Ваше имя*" required>
+                                </div>
+                                <div class="ip-form__input-wrap">
+                                    <input type="tel" class="ip-form__input" name="phone" placeholder="Ваш телефон*" required>
+                                </div>
+                            </div>
+
+                            <div class="ip-form__bottom-block">
+                                <div class="ip-form__privacy-block">
+                                    <label  class="form-approve">
+                                        <input type="checkbox" name="approve" checked class="form-approve__input-checkbox">
+                                        <span class="form-approve__visible-cb"></span>
+                                        <span class="form-approve__text text-3">Я согласен на обработку персональных данных</span>
+                                    </label>
+
+
+                                    <a href="#" class="ip-form__privacy-link" target="_blank">Политика конфиденциальности</a>
+                                </div>
+
+                                <button class="ip-form__submit btn btn-red red-shadow">Заказать звонок</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <img src="assets/img/phone.png" alt="" class="ip-form-block__img-block">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</main>
+
+@@include('templates/footer.html')

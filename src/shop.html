@@ -1,0 +1,707 @@
+@@include('templates/header.html', {"body-class": "bg-gray"})
+
+<main>
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a>            
+            <span>Металические конструкции</span>
+        </div>  
+    </nav>
+
+    <div class="content-container">
+        <section>
+            <div class="container">
+                <h1 class="h2">металлические стеллажи</h1>
+
+                <div class="tag-list swiper">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="tag-list__tag swiper-slide" >Архивы</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Библиотеки</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Музеи</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Промышленные предприятия</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Медицинские учреждения</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >МВД</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Университет</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Галереи</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Картины</a>
+                        <a href="#" class="tag-list__tag swiper-slide" >Выставки</a>                    
+                    </div>                
+                </div>
+
+
+                <div class="shop-container">
+                    <aside class="shop-container__filter-aside">
+                        <div class="shop-aside">
+                            <div class="shop-aside__group">
+                                <div class="shop-aside__title">
+                                    <p class="text-2 fw-600">Тип стеллажа</p>
+                                </div>
+
+                                <ul class="shop-aside__category-list">
+                                    <li><a href="#">Стеллажи с электроприводом</a></li>
+                                    <li><a href="#">Передвижные стеллажи</a></li>
+                                    <li><a href="#">Мобильные стеллажи</a></li>
+                                    <li><a href="#">Стационарные стеллажи</a></li>
+                                    <li><a href="#">Металлические стеллажи с дверями</a></li>
+                                    <li><a href="#">Металлические стеллажи с ящиками</a></li>
+                                    <li><a href="#">Средне грузовые стеллажи</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="shop-aside__group">
+                                <button class="shop-aside__close">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.304 1.69699L1.69702 12.303M12.304 12.303L1.69702 1.69699" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>    
+                                </button>
+                                
+
+
+                                <div class="shop-aside__title">
+                                    <p class="text-2 fw-600">Фильтры по параметрам</p>
+                                </div>
+
+                                <div id="filter-accordion" class="itc-accordion">
+                                    <div class="itc-accordion-item itc-accordion-item-show">
+                                        <div class="itc-accordion-header">
+                                            Высота, мм
+                                        </div>
+                                        <div class="itc-accordion-body">
+                                            <div class="itc-accordion-content">
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2765">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2765 <span>(37)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2065">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2065 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2982">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2982 <span>(8+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2282">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2282 <span>(6+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2415">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2415 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2635">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2635 <span>(7+1)</span><span>(3)</span></span>
+                                                </label>
+                                                
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="1932">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">1932 <span>(5+1)</span><span>(6)</span></span>
+                                                </label>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itc-accordion-item itc-accordion-item-show">
+                                        <div class="itc-accordion-header">
+                                            Ширина яруса, мм
+                                        </div>
+                                        <div class="itc-accordion-body">
+                                            <div class="itc-accordion-content">
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2765">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2765 <span>(37)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2065">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2065 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2982">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2982 <span>(8+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2282">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2282 <span>(6+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2415">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2415 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2635">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2635 <span>(7+1)</span><span>(3)</span></span>
+                                                </label>
+                                                
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="1932">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">1932 <span>(5+1)</span><span>(6)</span></span>
+                                                </label>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itc-accordion-item itc-accordion-item-show">
+                                        <div class="itc-accordion-header">
+                                            Глубина, мм
+                                        </div>
+                                        <div class="itc-accordion-body">
+                                            <div class="itc-accordion-content">
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2765">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2765 <span>(37)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2065">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2065 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2982">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2982 <span>(8+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2282">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2282 <span>(6+1)</span><span>(7)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2415">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2415 <span>(35)</span></span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2635">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2635 <span>(7+1)</span><span>(3)</span></span>
+                                                </label>
+                                                
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="1932">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">1932 <span>(5+1)</span><span>(6)</span></span>
+                                                </label>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itc-accordion-item itc-accordion-item-show">
+                                        <div class="itc-accordion-header">
+                                            Тип привода
+                                        </div>
+                                        <div class="itc-accordion-body">
+                                            <div class="itc-accordion-content">
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="электрический">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">электрический</span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="механический">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">механический</span>
+                                                </label>
+
+                                                <label  class="filter-item">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="стационарный">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">стационарный</span>
+                                                </label>
+
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="itc-accordion-item itc-accordion-item-show">
+                                        <div class="itc-accordion-header">
+                                            Количество секций
+                                        </div>
+                                        <div class="itc-accordion-body">
+                                            <div class="itc-accordion-content">
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="1">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">1</span>
+                                                </label>
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="2">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">2</span>
+                                                </label>
+
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="3">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">3</span>
+                                                </label>
+
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="4">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">4</span>
+                                                </label>
+
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="5">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">5</span>
+                                                </label>
+
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="6">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">6</span>
+                                                </label>
+
+                                                <label  class="filter-item ">
+                                                    <input type="checkbox" name="height"  class="filter-item__input-checkbox" value="7">
+                                                    <span class="filter-item__visible-cb"></span>
+                                                    <span class="filter-item__text text-3">7</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="shop-aside__btn-container">
+                                    <button class="apply-filter">Применить</button>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </aside>
+
+                    <div class="shop-container__products-container">
+
+                        <div class="shop-container__filter-btn-container">
+                            <button class="open-filter">
+                                Фильтр
+                                <span class="open-filter__qty">1</span>
+                            </button>
+                        </div>
+
+                        <div class="product-list">
+
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card__img">
+                                    <img src="assets/img/product.png" alt="">
+                                </div>
+                                <div class="product-card__body">
+                                    <div class="product-card__description">
+                                        <p class="text-2 fw-600">Стационарные архивные стеллажи (основная секция) 2282*1000*200мм (6+1)</p>
+                                        <ul class="text-3">
+                                            <li>Грузоподъемность от 80 до 700 кг</li>
+                                            <li>Длина полок 1000 мм</li>
+                                            <li>Высота стеллажей – 2282 мм</li>
+                                        </ul>
+
+                                        
+                                    </div>
+                                    <div class="product-card__btn-block">
+                                        <a href="single-product.html" class="product-card__btn">
+                                            подробнее
+                                            <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="loading-container">
+                            <button class="load-btn">
+                                Показать еще
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.5342 6.99978H15.4668C15.5144 6.99952 15.5611 7.01291 15.6014 7.03836C15.6416 7.0638 15.6738 7.10024 15.694 7.14337C15.7142 7.18649 15.7216 7.2345 15.7153 7.28171C15.7091 7.32892 15.6895 7.37337 15.6588 7.40978L13.6928 9.76978C13.6694 9.79792 13.64 9.82055 13.6068 9.83608C13.5736 9.85162 13.5375 9.85967 13.5008 9.85967C13.4642 9.85967 13.428 9.85162 13.3948 9.83608C13.3616 9.82055 13.3323 9.79792 13.3088 9.76978L11.3428 7.40978C11.3127 7.3732 11.2936 7.32882 11.2876 7.28181C11.2817 7.23479 11.2892 7.18705 11.3093 7.14414C11.3294 7.10122 11.3613 7.06488 11.4012 7.03933C11.4411 7.01378 11.4868 7.00007 11.5342 6.99978ZM0.534819 8.99978H4.46682C4.51421 8.9995 4.56054 8.98578 4.60046 8.96023C4.64037 8.93468 4.67222 8.89834 4.69232 8.85542C4.71242 8.81251 4.71994 8.76477 4.71401 8.71775C4.70808 8.67074 4.68894 8.62636 4.65882 8.58978L2.69282 6.22978C2.66936 6.20164 2.64 6.17901 2.60682 6.16348C2.57364 6.14794 2.53745 6.13989 2.50082 6.13989C2.46418 6.13989 2.428 6.14794 2.39482 6.16348C2.36164 6.17901 2.33228 6.20164 2.30882 6.22978L0.342819 8.58978C0.312416 8.62628 0.293043 8.67069 0.286966 8.7178C0.28089 8.76491 0.288362 8.81278 0.308508 8.8558C0.328654 8.89882 0.36064 8.93521 0.40072 8.96071C0.4408 8.98621 0.487315 8.99976 0.534819 8.99978Z" fill="#666666" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 2.9999C7.2629 2.99899 6.53461 3.16157 5.86773 3.47593C5.20085 3.79029 4.61197 4.24861 4.1435 4.8179C4.10231 4.8703 4.05107 4.91394 3.99278 4.94625C3.93449 4.97856 3.87033 4.99889 3.80406 5.00605C3.7378 5.0132 3.67078 5.00704 3.60693 4.98792C3.54309 4.9688 3.48371 4.93711 3.43229 4.89471C3.38087 4.85231 3.33844 4.80006 3.30751 4.74103C3.27657 4.68199 3.25775 4.61737 3.25215 4.55096C3.24654 4.48455 3.25428 4.41769 3.27489 4.35431C3.2955 4.29093 3.32857 4.23231 3.37216 4.1819C4.10437 3.29553 5.07575 2.63811 6.17078 2.28782C7.2658 1.93752 8.4384 1.9091 9.54911 2.20593C10.6598 2.50276 11.6619 3.11236 12.4362 3.96221C13.2105 4.81207 13.7244 5.86643 13.9168 6.9999H12.9002C12.6696 5.87053 12.056 4.8555 11.1631 4.12659C10.2702 3.39768 9.15281 2.99966 8.00016 2.9999ZM3.10016 8.9999C3.28952 9.92445 3.73657 10.7766 4.38967 11.4578C5.04277 12.1391 5.87528 12.6217 6.79102 12.8498C7.70676 13.078 8.66837 13.0425 9.56477 12.7474C10.4612 12.4522 11.2558 11.9095 11.8568 11.1819C11.898 11.1295 11.9493 11.0859 12.0075 11.0535C12.0658 11.0212 12.13 11.0009 12.1963 10.9938C12.2625 10.9866 12.3295 10.9928 12.3934 11.0119C12.4572 11.031 12.5166 11.0627 12.568 11.1051C12.6195 11.1475 12.6619 11.1997 12.6928 11.2588C12.7238 11.3178 12.7426 11.3824 12.7482 11.4488C12.7538 11.5152 12.746 11.5821 12.7254 11.6455C12.7048 11.7089 12.6718 11.7675 12.6282 11.8179C11.896 12.7043 10.9246 13.3617 9.82955 13.712C8.73452 14.0623 7.56193 14.0907 6.45122 13.7939C5.34051 13.497 4.33842 12.8874 3.56413 12.0376C2.78983 11.1877 2.27592 10.1334 2.0835 8.9999H3.10016Z" fill="#666666" />
+                                  </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Сопутствующие товары</h2>
+
+
+                <div class="swiper more-news">
+                    <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                            <div class="product-card__img">
+                                <img src="assets/img/product-2.png" alt="">
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__description">
+                                    <p class="text-2 fw-600">Стремянка на 2 ступеньки</p>
+                                    <ul class="text-3">
+                                        <li>Высота общая: 800 мм</li>
+                                        <li>Высота до верхней ступеньки: 500 мм.</li>
+                                        <li>Ширина: 480 мм</li>
+                                    </ul>
+
+                                    
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price-block">
+                                        <span>от</span>                                        
+                                        <div class="product-card__price">3967 ₽</div>
+                                    </div>
+                                    <a href="single-product.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                            <div class="product-card__img">
+                                <img src="assets/img/product-3.png" alt="">
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__description">
+                                    <p class="text-2 fw-600">Тележка архивная ТА-1</p>
+                                    <ul class="text-3">
+                                        <li>Расстояние между полками:   400 мм</li>
+                                        <li>Боковой ограничитель:  Пруток, с 3-х сторон</li>
+                                        <li>Вес: 24 кг</li>
+                                    </ul>
+
+                                    
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price-block">
+                                        <span>от</span>                                        
+                                        <div class="product-card__price">20 000 ₽</div>
+                                    </div>
+                                    <a href="single-product.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                            <div class="product-card__img">
+                                <img src="assets/img/product-2.png" alt="">
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__description">
+                                    <p class="text-2 fw-600">Стремянка на 2 ступеньки</p>
+                                    <ul class="text-3">
+                                        <li>Высота общая: 800 мм</li>
+                                        <li>Высота до верхней ступеньки: 500 мм.</li>
+                                        <li>Ширина: 480 мм</li>
+                                    </ul>
+
+                                    
+                                </div>
+
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price-block">
+                                        <span>от</span>                                        
+                                        <div class="product-card__price">3967 ₽</div>
+                                    </div>
+                                    <a href="single-product.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                            <div class="product-card__img">
+                                <img src="assets/img/product-3.png" alt="">
+                            </div>
+                            <div class="product-card__body">
+                                <div class="product-card__description">
+                                    <p class="text-2 fw-600">Тележка архивная ТА-1</p>
+                                    <ul class="text-3">
+                                        <li>Расстояние между полками:   400 мм</li>
+                                        <li>Боковой ограничитель:  Пруток, с 3-х сторон</li>
+                                        <li>Вес: 24 кг</li>
+                                    </ul>
+
+                                    
+                                </div>
+                                <div class="product-card__bottom">
+                                    <div class="product-card__price-block">
+                                        <span>от</span>                                        
+                                        <div class="product-card__price">20 000 ₽</div>
+                                    </div>
+                                    <a href="single-product.html" class="arrow-link black">
+                                        Подробнее
+                                        <svg width="19" height="8" viewBox="0 0 19 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 4L15 0V3H0V5H15V8L19 4Z" fill="#4750D5" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+    </div>
+</main>
+
+@@include('templates/footer.html')

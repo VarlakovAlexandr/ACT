@@ -1,0 +1,99 @@
+@mixin mx-h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 153%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+    @include calculateResponsiveProperty(768px, 1368px, 26px, 40px, font-size);
+    @include calculateResponsiveProperty(1369px, 1920px, 40px, 64px, font-size);
+}
+
+@mixin mx-h2($color: #222) {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color;
+
+    @include calculateResponsiveProperty(768px, 1368px, 22px, 24px, font-size);
+    @include calculateResponsiveProperty(1369px, 1920px, 24px, 30px, font-size);
+}
+
+@mixin mx-h3($color: #222) {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: $color;
+    @include calculateResponsiveProperty(768px, 1368px, 16px, 18px, font-size);
+    @include calculateResponsiveProperty(1369px, 1920px, 18px, 20px, font-size);
+}
+
+
+@mixin mx-text-1($color: #222){
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: $color;
+    @include calculateResponsiveProperty(768px, 1368px, 16px, 18px, font-size);
+    @include calculateResponsiveProperty(1369px, 1920px, 18px, 20px, font-size);
+}
+
+@mixin mx-text-2($color: #222){
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: $color;
+    @include calculateResponsiveProperty(768px, 1368px, 14px, 16px, font-size);
+}
+
+@mixin mx-text-3($color: $black){
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: $color;
+    
+}
+
+@mixin mx-text-4{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #222;
+
+    
+}
+
+@mixin mx-btn-text-1($color: #222){
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: $color;
+
+}
+
+@mixin mx-btn-text-2($color: #222){
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: $color;
+
+}
+
+@mixin margin-bottom-60{
+    margin-bottom: 24px;
+    @include calculateResponsiveProperty(768px, 1368px, 24px, 60px, margin-bottom);
+}
+
+@mixin margin-bottom-80{
+    margin-bottom: 32px;
+    @include calculateResponsiveProperty(768px, 1368px, 32px, 80px, margin-bottom);
+}

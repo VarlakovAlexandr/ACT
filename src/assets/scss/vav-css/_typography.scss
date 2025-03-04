@@ -1,0 +1,121 @@
+
+
+h1, .h1{
+    @include mx-h1;
+}
+
+
+
+h2, .h2{
+    @include mx-h2;
+}
+
+
+
+h3, .h3{
+    @include mx-h3;
+}
+
+
+
+.text-1{
+    @include mx-text-1;
+}
+
+.text-2{
+    @include mx-text-2;
+}
+
+.text-3{
+    @include mx-text-3;
+}
+
+.text-4{
+    @include mx-text-4;
+}
+
+
+.footer-link{
+    @include mx-text-3;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    &:hover{
+        color: $blue;
+    }
+}
+
+/*font-style*/
+.fs-normal{
+    font-style: normal;
+}
+.fs-italic{
+    font-style: italic;
+}
+/*font-style*/
+
+/*font-weight*/
+.fw-700, .fw-bold{
+    font-weight: bold;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-300{
+    font-weight: 300;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-transform-none{
+    text-transform: none;
+}
+/*font-weight*/
+
+/*text-align*/
+@each $property-name in $text-align-properties {
+    .text-#{$property-name} {
+        text-align: $property-name;        
+    }
+        
+}
+
+@each $brekpoint-name, $breakpoint-value in $break-points{
+    @media (min-width: $breakpoint-value){
+        @each $property-name in $text-align-properties {
+            .text-#{$brekpoint-name}-#{$property-name} {
+                text-align: $property-name;                    
+            }
+        }
+    }
+}
+/*text-align*/
+
+
+
+.text-white{
+    color: var(--white);
+}
+.text-blue{
+    color: var(--blue);
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-underline{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+
+.fs-italic{
+    font-style: italic;
+}

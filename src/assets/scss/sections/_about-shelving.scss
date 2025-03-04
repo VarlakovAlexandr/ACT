@@ -1,0 +1,102 @@
+.about-shelving{
+    h2{
+        
+        @include calculateResponsiveProperty(1024px, 1920px, 0px, 20px, margin-bottom);
+    }
+    
+}
+
+.as-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 12px;
+    @media (min-width: 600px){
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    @media (min-width: 1024px){
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+    }
+}
+.as-card:not(.img){
+    padding-bottom: 12px;
+    @media (min-width: 1024px){
+        padding-bottom: 0px;
+    }
+}
+.as-card.img{
+    aspect-ratio: 100 / 75;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    & > img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    min-height: 100%;
+    max-width: 100%;
+}
+
+.as-card__caption-layer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    clip-path: polygon(80% 72%,100% 0,100% 100%,0 100%);
+
+    
+    
+    //background-color: red;
+    background-color: rgba(0, 0, 0, 0.5);
+    //backdrop-filter: blur(30px);
+
+    /*
+        
+        backdrop-filter: blur(30px);
+    
+    z-index: 5;*/
+
+    img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        backdrop-filter: blur(30px)
+    }
+
+    svg{
+        position: absolute;
+        z-index: 5;
+        /*width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        clip-path: polygon(71% 70%, 100% 0, 100% 100%, 0% 100%);*/
+    }
+
+    h3{
+        color: #fff;
+        position: relative;
+        z-index: 5;
+    }
+
+    
+}
+

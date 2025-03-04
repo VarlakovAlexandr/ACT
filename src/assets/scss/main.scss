@@ -1,0 +1,186 @@
+@use "sass:math";
+@import 'functions';
+
+@mixin calculateResponsiveProperty($startBreakPoint, $endBreakPoint, $startValue, $finishValue, $property ){
+	@media (min-width: $startBreakPoint){
+		#{$property}: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
+		
+	}
+	@media (min-width: $endBreakPoint){
+		#{$property}: $finishValue;
+	}
+}
+:root {
+	--grey-1: #f1f2f3;
+	--black: #222;
+	--white: #fff;	
+	--blue: #4750d4;
+	--dark-blue: #34386f;
+	--red: #ec5555;
+	--grey-2: #666;
+	--grey-3: #d6d6db;
+	--font-family: "Gilroy", sans-serif;
+	--second-family: "Montserrat", sans-serif;
+}
+
+$white: #fff;
+$blue: #4750d4;
+$black: #222;
+$dark-blue: #34386f;
+$red: #ec5555;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+button, textarea, input{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+textarea, input{
+	width: 100%;
+}
+a, textarea, input, button{
+	transition: ease-in 300ms;
+	font-family: inherit;
+	outline: none;
+}
+a, textarea, input, button{
+	font-family: var(--font-family);
+}
+
+
+button{
+	cursor: pointer;
+}
+svg{
+	path{
+		transition: 300ms ease;
+	}
+}
+
+
+textarea{
+	resize: none;
+}
+
+ul{
+	list-style: none;
+}
+
+address{
+	font-style: normal;
+}
+
+html{
+	
+	font-family: var(--font-family);
+}
+body{
+	display: flex;
+	flex-direction: column;	
+	min-height: 100vh;
+	
+}
+
+body.no-scroll{
+	overflow: hidden;
+}
+main{
+	flex-grow: 1;
+}
+
+
+section, footer{
+	padding: 0 16px;
+
+	@include calculateResponsiveProperty(768px, 1368px, 16px, 32px, padding-left);
+	@include calculateResponsiveProperty(768px, 1368px, 16px, 32px, padding-right);
+}
+
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+section > .container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.content-container{
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+
+	@include calculateResponsiveProperty(1024px, 1920px, 50px, 80px, row-gap);
+}
+
+
+.page{
+	main{
+		padding-top: 84px;
+		@media (min-width: 1280px){
+			padding-top: 140px;
+		}
+
+		
+	}
+    
+}
+
+
+.main-404{
+	background: url(../img/404/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 42px;
+
+}
+
+.bg-gray{
+	background: var(--grey-1)
+}
+
+@import 'mixins';
+@import 'vav-css';
+@import 'units/ui';
+@import 'units/accordion';
+@import 'units/modals';
+@import 'units/archive-search';
+@import 'units/tag-list';
+@import 'units/news-card';
+@import 'units/news-content';
+@import 'units/p404';
+@import 'units/p-contacts';
+@import 'units/shop';
+@import 'units/single-product';
+@import 'units/quiz';
+
+
+@import 'sections/hero';
+@import 'sections/header';
+@import 'sections/footer';
+@import 'sections/mobile-menu';
+@import 'sections/inx-categories';
+@import 'sections/about-shelving';
+@import 'sections/about';
+@import 'sections/reviews';
+@import 'sections/last-news';
+@import 'sections/inx-contacts';
+@import 'sections/partners';
+@import 'sections/advantages';
+@import 'sections/ip-form';
+@import 'sections/ps-news';
+@import 'sections/catalog';
+@import 'sections/services';
+@import 'sections/how-make-order';
+@import 'sections/our-projects';
+@import 'sections/project-form';
+@import 'sections/project-features';
