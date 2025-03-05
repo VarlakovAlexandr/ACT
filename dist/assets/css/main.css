@@ -7467,6 +7467,78 @@ input:checked + .red-radio__round::before {
   position: relative;
 }
 
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 24px;
+}
+@media (min-width: 480px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+}
+
+.reviews-grid__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 12px;
+}
+
+.reviews-grid__img-block {
+  position: relative;
+  aspect-ratio: 100/141.754385965;
+  border-radius: 8px;
+  border: 1px solid #e7e7e7;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.reviews-grid__img-block img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 700ms ease;
+  -o-transition: 700ms ease;
+  transition: 700ms ease;
+}
+.reviews-grid__img-block:hover img {
+  -webkit-transform: translate(-50%, -50%) scale(1.05);
+      -ms-transform: translate(-50%, -50%) scale(1.05);
+          transform: translate(-50%, -50%) scale(1.05);
+}
+
+.reviews-grid__text-block {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 4px;
+}
+
 @media (min-width: 1024px) {
   .last-news h2 {
     margin-bottom: calc(0px + (1vw - 10.24px) * 5.5803571429);
