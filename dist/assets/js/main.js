@@ -633,3 +633,50 @@ const quizSlider = new Swiper(".swiper.quiz", {
     },
     
 })
+
+const quizQuestions = new Swiper(".swiper.quiz-inner-slider", {
+    speed: 1000,
+    
+    slidesPerView: 1,
+    spaceBetween: 0,
+    allowTouchMove: false,
+    
+    
+    
+})
+
+const progressValue = document.querySelector('.quiz-progress__value');
+const progressIndicatorValue  = document.querySelector('.quiz-progress__indicator-value');
+
+
+
+quizQuestions.on('slideChange', function () {    
+    let progress =  quizQuestions.activeIndex  / quizQuestions.slides.length * 100;
+
+    progress = Math.floor(progress);
+    progressIndicatorValue.style.width  = progress + '%';
+    progressValue.innerHTML = progress + ' %';
+});
+
+
+const  quizSuperNext = document.querySelector('.quiz-super-next');
+
+quizSuperNext.addEventListener('click', function(){
+    if ( quizQuestions.isEnd ){
+        quizSlider.slideNext();  
+             
+    } else{
+        quizQuestions.slideNext();
+    }
+})
+
+
+const  quizSuperPrev = document.querySelector('.quiz-super-prev');
+
+quizSuperPrev.addEventListener('click', function(){
+    if ( quizQuestions.isBeginning ){
+        quizSlider.slidePrev();               
+    } else{
+        quizQuestions.slidePrev();
+    }
+})
